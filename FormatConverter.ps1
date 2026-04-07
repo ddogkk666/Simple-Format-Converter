@@ -5,6 +5,7 @@ param(
     [string]$InputListPath,
     [string]$TargetExtensionArg,
     [string]$ImageModeArg,
+    [string]$GifPresetArg,
     [string]$StatusPath
 )
 
@@ -207,12 +208,4 @@ function Get-FileTypeProfile {
         }
     }
 
-    if ($videoExts -contains $ext) {
-        return [PSCustomObject]@{
-            Extension = $ext
-            Kind = "media"
-            Targets = @("mp3", "wav", "aac", "m4a", "flac", "mp4", "mov", "avi", "mkv", "webm") |
-                Where-Object { ("." + $_) -ne $ext }
-        }
-    }
-    
+  

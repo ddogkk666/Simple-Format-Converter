@@ -1,2 +1,3 @@
 pdfslides
 pdf2docx
+Pillow

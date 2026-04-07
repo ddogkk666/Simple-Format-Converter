@@ -2,11 +2,18 @@
 
 一个面向 Windows 的便携式文件格式转换工具，支持拖拽文件、选择目标格式，然后一键转换。
 
+最新版本已经包含：
+
+- 更轻的运行占用优化
+- 新增 `视频 -> GIF` 转换
+- 便携版下载后可直接运行
+
 ## 下载安装
 
 便携版下载：
 
-- [前往 Releases 下载](https://github.com/ddogkk666/Simple-Format-Converter/releases)
+- [下载最新 Release](https://github.com/ddogkk666/Simple-Format-Converter/releases/latest)
+- [查看所有 Releases](https://github.com/ddogkk666/Simple-Format-Converter/releases)
 
 使用方法：
 
@@ -23,6 +30,7 @@
 - `PDF -> PNG/JPG`
 - `PPT/PPTX -> PNG/JPG`
 - `PNG/JPG/JPEG/BMP/GIF/TIFF -> PDF`
+- `MP4 / MOV / AVI / MKV / WEBM -> GIF`
 - `MP4 -> MP3`
 - 常见视频格式互转：`MP4 / MOV / AVI / MKV / WEBM`
 - 常见音频格式互转：`MP3 / WAV / AAC / M4A / FLAC / OGG`
@@ -57,7 +65,14 @@ converted\example\example.pdf
 powershell -ExecutionPolicy Bypass -STA -File .\FormatConverter.ps1
 ```
 
+Python 依赖：
+
+- `pdfslides`
+- `pdf2docx`
+- `Pillow`
+
 ## 注意
 
 - `PDF -> PPTX` 更适合生成可展示、可继续编辑的幻灯片，不保证与原 PDF 完全一致。
 - `PDF -> DOCX` 的排版结果也可能与原文档存在差异。
+- `GIF` 转换提供体积与质量预设，适合做演示和分享，不适合替代原始视频文件。

@@ -1,0 +1,7 @@
+converted/
+ffmpeg.exe
+LibreOfficePortable/
+PythonRuntime/
+*.log
+*.tmp
+*.temp
